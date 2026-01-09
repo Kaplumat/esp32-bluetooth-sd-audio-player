@@ -46,19 +46,20 @@ You can modify the pin definitions in `src/main.cpp` if needed.
 1. **Install Arduino IDE**
 
 ### Installation Steps
+1.**İn Arduino Press File,Go Prefences And Paste This "https://dl.espressif.com/dl/package_esp32_index.json" URL İnto "Additional boards manager URLs:"(For ESP32 to work on Arduino)
 
-1. **Clone or download this project**
+2. **Clone or download this project**
 
-2. **Open in Arduino**
+3. **Open in Arduino**
    - Open the project folder
 
-3. **Connect your ESP32**
+4. **Connect your ESP32**
    - Connect ESP32 to your computer via USB
 
-4. **Upload the code**
+5. **Upload the code**
    - Click the "Upload" button in ArduinoIDE
 
-5. **Monitor Serial Output**
+6. **Monitor Serial Output**
    - Click "SerialMonitor" in ArduinoIDE
    - Set baud rate to 115200
 
