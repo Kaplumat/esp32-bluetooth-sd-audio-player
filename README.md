@@ -172,35 +172,9 @@ The Serial Monitor (115200 baud) will show:
 **Symptoms:** Crashes or "out of memory" messages
 
 **Solutions:**
-1. Use smaller audio files
+1. Reduce The BUFFER_SIZE
 2. Convert MP3 files to lower bitrate
 3. Use WAV files with lower sample rate (e.g., 22kHz instead of 44.1kHz)
-
-## Customization
-
-### Change Auto-Play Behavior
-
-In `src/main.cpp`, modify the `loop()` function to change when files start playing:
-
-```cpp
-// Remove auto-play entirely
-// Or change the delay: millis() - start_time > 5000  // 5 seconds
-```
-
-### Play Specific Files
-
-You can modify the code to play specific files or implement a playlist system.
-
-### Change Bluetooth Name
-
-In `setup()`, change:
-```cpp
-a2dp_source.start("ESP32-AudioPlayer", get_data_channels);
-```
-to:
-```cpp
-a2dp_source.start("YourCustomName", get_data_channels);
-```
 
 ## Technical Details
 
