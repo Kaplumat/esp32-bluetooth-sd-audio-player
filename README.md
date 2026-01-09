@@ -2,6 +2,7 @@
 ESP32 Bluetooth A2DP audio player using SD card and double buffering
 Play music from an SD card directly to your Bluetooth headphones using an ESP32, without needing a phone!
 
+IMPORTANT: USE WAV NOT MP3 
 ## Features
 
 - 🎵 Play MP3 and WAV files from SD card
@@ -42,29 +43,23 @@ You can modify the pin definitions in `src/main.cpp` if needed.
 
 ### Prerequisites
 
-1. **Install PlatformIO** (VS Code extension or standalone)
-2. **Install Python** (required by PlatformIO)
+1. **Install Arduino IDE**
 
 ### Installation Steps
 
 1. **Clone or download this project**
 
-2. **Open in PlatformIO**
-   - Open VS Code
+2. **Open in Arduino**
    - Open the project folder
-   - PlatformIO should automatically detect the project
 
 3. **Connect your ESP32**
    - Connect ESP32 to your computer via USB
-   - Note the COM port (Windows) or /dev/tty* (Linux/Mac)
 
 4. **Upload the code**
-   - Click the "Upload" button in PlatformIO
-   - Or run: `pio run --target upload`
+   - Click the "Upload" button in ArduinoIDE
 
 5. **Monitor Serial Output**
-   - Click "Monitor" in PlatformIO
-   - Or run: `pio device monitor`
+   - Click "SerialMonitor" in ArduinoIDE
    - Set baud rate to 115200
 
 ## Preparing Audio Files
