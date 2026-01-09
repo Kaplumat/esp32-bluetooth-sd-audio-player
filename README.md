@@ -1,6 +1,7 @@
 # esp32-bluetooth-sd-audio-player
 ESP32 Bluetooth A2DP audio player using SD card and double buffering
 Play music from an SD card directly to your Bluetooth headphones using an ESP32, without needing a phone!
+For Select Music İn" if (!load_wav_file("/Car.wav")) {" Rename The "Car"
 
 IMPORTANT: USE WAV NOT MP3 
 ## Features
@@ -67,7 +68,6 @@ You can modify the pin definitions in `src/main.cpp` if needed.
 
 ### Supported Formats
 - **WAV** (PCM, 16-bit, 44.1kHz recommended)
-- **MP3** (most common formats)
 
 ### File Preparation
 
@@ -83,6 +83,8 @@ You can modify the pin definitions in `src/main.cpp` if needed.
 3. **Insert SD Card**
    - Insert SD card into the SD card module
    - Make sure it's properly seated
+
+4.**Rename the  "if (!load_wav_file("/Car.wav")) {"
 
 ### Converting Audio Files
 
