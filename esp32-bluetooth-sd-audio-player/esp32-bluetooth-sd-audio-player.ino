@@ -124,7 +124,6 @@ void setup() {
     }
     Serial.println("SD initialized.");
 
-    // Küçük delay ekleyelim → ESP32 heap ve A2DP stack stabil olsun
     delay(2000);
 
     // Bluetooth
@@ -147,5 +146,5 @@ void setup() {
 
 void loop() {
     fill_sd_buffer();
-    yield(); // FreeRTOS’a CPU bırak → resetleri engeller
+    yield(); 
 }
